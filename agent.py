@@ -1,3 +1,5 @@
+import warnings
+warnings.filterwarnings("ignore")
 from dotenv import load_dotenv
 from langchain_anthropic import ChatAnthropic
 from langchain_tavily import TavilySearch
@@ -20,4 +22,6 @@ def run_agent(question: str):
     return final
 
 if __name__ == "__main__":
-    run_agent("What are the latest breakthroughs in AI agents in 2025?")
+    question = input("Enter your research question: ")
+    print("\nResearching... this may take a few seconds.\n")
+    run_agent(question)
