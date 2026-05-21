@@ -22,6 +22,11 @@ def run_agent(question: str):
     return final
 
 if __name__ == "__main__":
-    question = input("Enter your research question: ")
+    print("Sample questions you can ask:\n")
+    print("What are the most promising startups in the AI agent space in 2025?\n")
+    print("What are the latest breakthroughs in AI agents in 2025?\n")
+    print("What are the best programming languages to learn for AI development?\n")
+    print("How are companies using AI agents in enterprise settings?\n")
+    question = input("\nEnter your research question: ")
     print("\nResearching... this may take a few seconds.\n")
     run_agent(question)
